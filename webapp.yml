@@ -1,14 +1,10 @@
-- hosts: localhost
+- 
+  hosts: local
   connection: local
   vars:
     app_name: myTestApp
     location: eastus
     linux_plan_name: myTestPlan
-    traffic_manager_profile_name: myTMProfile
-    traffic_manager_endpoint_name: endpoint1
-
-  roles:
-    - azure.azure_preview_modules
 
   tasks:
   - name: Create resource group
