@@ -24,7 +24,7 @@
     }
   },
   "variables": {
-    "storageAccountName": "[VIVEKSTORAGE_GRS]"
+    "storageAccountName": "[vivekstorage001]"
   },
   "resources": [
     {
