@@ -1,0 +1,1 @@
+New-AzureRmWebApp -Name webapp1 -AppServicePlan STICKYSLOT-ASP -ResourceGroupName RG1 -Location "West Europe" 
