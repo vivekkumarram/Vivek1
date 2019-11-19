@@ -1,0 +1,31 @@
+
+    linux4faizanweldon@gmail.com
+?
+    ghriem123
+
+
+echo "Setting environment variables for Terraform"
+export ARM_SUBSCRIPTION_ID=your_subscription_id
+export ARM_CLIENT_ID=your_appId
+export ARM_CLIENT_SECRET=your_password
+export ARM_TENANT_ID=your_tenant_id
+
+
+echo "Setting environment variables for Terraform"
+
+export ARM_SUBSCRIPTION_ID=5e70bd50-a09a-418b-bc79-3c5366be03d1
+
+export ARM_CLIENT_ID=ae247240-a1fe-4280-ad1e-acc002d21189
+
+export ARM_CLIENT_SECRET=50f01437-a971-428e-8ea9-3d84b5b2dfff
+
+export ARM_TENANT_ID=e3f95453-6f09-442c-97fe-f8e393d6f347
+
+
+provider "azurerm" {
+    subscription_id = "5e70bd50-a09a-418b-bc79-3c5366be03d1"
+    client_id       = "ae247240-a1fe-4280-ad1e-acc002d21189"
+    client_secret   = "50f01437-a971-428e-8ea9-3d84b5b2dfff"
+    tenant_id       = "e3f95453-6f09-442c-97fe-f8e393d6f347"
+}
+
