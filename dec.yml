@@ -1,0 +1,24 @@
+---
+- hosts:
+  tasks:
+  - name: create Azure resource group
+    azure_rm_resourcegroup:
+      name: "{{ itgroup }}"
+      location: '{{ westus }}'
+      state: present
+
+  - name: create Azure virtual network in resource group
+    azure_rm_virtualnetwork:
+      name: "{{ vnetsrv01 }}"
+      resource_group: "{{ resource_group }}"
+      address_prefixes_cidr:
+      - 10.1.0.0/16
+      state: present
+  
+  - name: create Azure subnet in virtualnetwork
+    azure_rm_subnet:
+      name: '{{ subnetsrv01 }}'
+      state: present
+      virtual_network_name: "{{ vnetsrv01 }}"
+      resource_group: "{{ resource_group }}"
+      address_prefix_cidr: 10.1.0.0/24
