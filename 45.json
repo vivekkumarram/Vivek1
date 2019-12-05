@@ -3,7 +3,6 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "type": "string",
       "default value": "vmadmin",
       "metadata": {
         "description": "Username for the Virtual Machine."
