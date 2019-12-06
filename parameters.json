@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "azureuser"
+    },
+    "adminPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/d2a95df2-d8b8-4211-a6f1-dc81ab7f0bae/resourceGroups/RG1/providers/Microsoft.KeyVault/vaults/keystorevalut01"
+        },
+        "secretName": "secret01"
+      }
+    },
+    "dnsLabelPrefix": {
+      "value": "mumomn"
+    },
+    "windowsOSVersion": {
+      "value": "2012-R2-Datacenter"
+    }
+	}
+}
