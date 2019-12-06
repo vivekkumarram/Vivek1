@@ -1,0 +1,8 @@
+---
+- hosts: localhosts
+  connection: local
+  tasks:
+    - name: Create resource group
+      azure_rm_resourcegroup:
+        name: defaultresource
+        location: eastus
