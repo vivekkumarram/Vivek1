@@ -4,6 +4,6 @@
   tasks:
           - name: Create a resource group
             azure_rm_resourcegroup:
-                    name: washingtonprod
-                    location: eastus
+                    name: "{{ resource_group }}"
+                    location: "{{ location }}"
                     state: present
